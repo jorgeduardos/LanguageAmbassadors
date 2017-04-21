@@ -29,13 +29,6 @@ $(document).ready(function() {
 		});
 	});
 
-    /******************* NUEVA SIDE BAR ************************/
-
-    $(".js--nav-quote").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    
     
     /* NAV BAR ANIMATIONS */
     
@@ -90,38 +83,22 @@ $(document).ready(function() {
     
    
     /*     GET QUOTE ANIMATIONS */
-    
-    
-    
-    
-    // $('.js--nav-quote').click(function(){
-    //     $('.js--getQuote').toggle('slide', {direction: 'right'}, 1000);
-    // });
 
 
+    
+        /******************* NEW GET QUOTE SIDE BAR ************************/
 
-     /********** on and off get quote animation *******/
-    
-    
-    $(".js--generalQuote_btn").click(function(){
-        
-        var window = $(this).attr('rel');
-        var activeContainer = $('.js--active').exists();
-        
-        if( activeContainer === false ){
-                $('.'+window).show('slide', {direction: 'right'}, 1000, function(){
-                    $(this).addClass('js--active');
-                });
-        }else{
-    
-            $('.js--quote-container.js--active').hide('slide', {direction: 'right'}, 500, function(){
-                $(this).removeClass('js--active');
-                $('.'+window).show('slide', {direction: 'right'}, 1000, function(){
-                    $(this).addClass('js--active');
-                });
-            });
-        } 
+    $(".js--nav-quote").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
+
+
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()                             /*    BOOTSTRAP TABS   */
+      $(this).tab('show')
+    })
+        
     
     
     $(".js--close_general").click(function(){
