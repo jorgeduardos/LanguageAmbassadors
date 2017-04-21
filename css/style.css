@@ -560,7 +560,7 @@ fieldset label{
 /**********************************************************/
 
 #wrapper {
-    padding-left: 0;
+    padding-right: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -574,12 +574,12 @@ fieldset label{
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    right: 250px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-right: -250px;
     overflow-y: auto;
-    background: #000;
+    background: rgba(101, 178, 98, 0.94);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -587,7 +587,7 @@ fieldset label{
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 500px;
 }
 
 #page-content-wrapper {
@@ -620,7 +620,7 @@ fieldset label{
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #000;
 }
 
 .sidebar-nav li a:hover {

@@ -29,7 +29,9 @@ $(document).ready(function() {
 		});
 	});
 
-    $("#menu-toggle").click(function(e) {
+    /******************* NUEVA SIDE BAR ************************/
+
+    $(".js--nav-quote").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
@@ -92,9 +94,9 @@ $(document).ready(function() {
     
     
     
-    $('.js--nav-quote').click(function(){
-        $('.js--getQuote').toggle('slide', {direction: 'right'}, 1000);
-    });
+    // $('.js--nav-quote').click(function(){
+    //     $('.js--getQuote').toggle('slide', {direction: 'right'}, 1000);
+    // });
 
 
 
