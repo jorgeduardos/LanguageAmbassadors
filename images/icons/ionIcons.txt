@@ -1,0 +1,20 @@
+--- Translation services possible icons
+
+ion-document-text
+ion-edit
+ion-compose
+
+ion-ios-copy-outline
+ion-ios-compose-outline
+
+-- Interpretation
+
+
+ion-ios-compose-outline
+
+
+-- Terminology
+
+
+ion-ios-compose-outline
+ion-ios-bookmarks-outline

@@ -1,0 +1,380 @@
+
+
+@media only screen and (max-width: 1460px){
+    
+    .footer_inner{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        color: #ddd;
+    }   
+
+    
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+        
+    .serviceCol p{
+        margin-bottom: 25px;
+        font-size: 120%;
+        text-align: left;
+    }
+    
+    .service_info_div{
+        position: absolute;
+        bottom: 0%;
+        left: 33%;
+    }
+
+    .serviceCol .ts, .is, .ter{
+        height: 390px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1300px){
+    
+    
+    
+}
+
+@media only screen and (max-width: 1061px) {
+    
+    .needHelp_div{
+        width: 40%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1023px) {
+    
+    
+    .contact_div{
+        position: absolute;
+        left: 5%;
+        width: 70%;
+        height: inherit;
+        margin: 0 auto;
+    }
+    
+    .map{
+        display: none;
+    }
+      
+}
+
+
+@media only screen and (max-width: 991px){
+    
+    body{
+        font-size: 145%;
+    }
+    
+    .wrap{
+        font-size: 85%;
+    }
+    
+    .serviceCol .ts, .is, .ter{
+        position: relative;
+        height: 435px;
+    }
+    
+    .service_col_termTitle{
+        margin-bottom: 40px;
+    }
+    
+    .service_info_div{
+        position: absolute;
+        bottom: 0%;
+        left: 25%;
+    }
+    
+    .needHelp_div{
+        float: right;
+        width: 35%;
+    }
+    
+    .needHelp_div h3, .needHelp_div p{
+        margin-top: 18px;
+        font-size: 100%;
+    }
+    
+    .rowM .logoSmall{
+        height: 45px;
+        margin: 7px 5px 0 0;
+    }
+
+    
+}
+
+@media only screen and (max-width: 870px) {
+    
+    
+    .needHelp_div{
+        float: right;
+        width: 10%;
+    }
+    
+    .needHelp_div p, .needHelp_div h3{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+      
+    
+    .mobile_nav_icon{
+        display: inline-block;
+    }
+      
+    .rowM .navbar{
+        display: none;
+    }
+      
+    .needHelp_div{
+        float: left;
+        width: 1%;
+    }
+    
+    .needHelp_div .logoSmall{
+        display: none;
+    }
+    
+    .logoLarge{
+        display: inline-block;
+    }
+    
+    .serviceCol .ts, .is, .ter{
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    
+    .serviceCol .ts p, .is p, .ter p{
+        text-align: center;
+    }
+    
+    .service_info_div{
+        bottom: 12%;
+        left: 43%;
+    }
+    
+    .contact_div{
+        width: 100%;
+    }
+    
+    .contact_div fieldset{
+        margin: 0 auto;
+        width: 100%;
+        height: 350px;
+    }
+
+    .submit_contact{
+        margin-top: 15px;
+        left: 40%;
+        padding: 5px;
+    }
+    
+    .translation{
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .servicesCont{
+        padding-bottom: 0;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    
+    .service_info_div{
+        left: 40%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    /*header{
+        background-size: 700px;
+    }*/
+
+    header{
+        background-size: 650px;
+        background-position: center bottom;
+
+    }
+    
+    body{
+        font-size: 125%;;
+    }
+    
+    .getQuote{
+        width: 450px;
+        height: 300px;
+        font-size: 90%;
+    }
+    
+    .translation_container{
+        width: 450px;
+        height: 260px;
+        font-size: 90%;
+    }
+    
+    .interpretation_container{
+        width: 450px;
+        height: 285px;
+        font-size: 90%;
+    }
+ 
+    .terminology_container{
+        width: 450px;
+        height: 280px;
+        font-size: 90%;
+    }
+
+    #terminology textarea{
+        height: 100px;
+    }
+
+    .wrap{
+        top: 11%;
+    }
+
+    .wrap_4{
+        height: 550px;
+    }
+    
+    .services{
+        margin-top: 10px;
+    }
+    
+    .serviceCol .ts, .is, .ter{
+        position: relative;
+        height: 280px;
+    }
+    
+    .service_info_div{
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+    
+    
+    .contact_div{
+        left: 0;
+    }
+    
+    
+    .contact_div fieldset{
+        height: 490px;
+    }
+    
+    .contact_name_div, .contact_email_div, .contact_subject_div, .contact_message_div{
+        text-align: center;
+        width: 199px;
+        height: 70px;
+    }
+    
+    fieldset input, fieldset textarea{ 
+        display: block;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        
+    }
+    fieldset label{
+        display: block;
+    }
+    
+    .submit_contact{
+        left: 40%;
+        bottom: 0;
+    }
+    
+    .management p .management_more{
+        margin-left: 0;
+    }
+
+    .rowM .mobileNavbar{
+        margin-top: 35px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+
+    .getQuote{
+        width: 310px;
+        height: 300px;
+        font-size: 65%;
+    }
+    
+    .translation_container{
+        width: 310px;
+        height: 240px;
+        font-size: 65%;
+    }
+    
+    .interpretation_container{
+        width: 310px;
+        height: 250px;
+        font-size: 65%;
+    }
+ 
+    .terminology_container{
+        width: 310px;
+        height: 230px;
+        font-size: 65%;
+    }
+
+    #quote input, #translation input, .interp_subject_div input, .interp_language_div input, .interp_location_div input{
+        width: 110px;
+    }
+
+    .interp_date_div input{
+        width: 90px;
+    }
+
+    #terminology textarea{
+        height: 80px;
+    }
+    
+    .wrap{
+        top: 11%;
+    }
+    
+    .wrap h1{
+        font-size: 40px;
+        
+    }
+    
+    /*.wrap .typed_div{
+        display: none;
+    }*/
+    
+    .service_info_div{
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+    }
+    
+    .logoLarge{
+        height: 45px;
+    }
+    
+   /* .rowM .mobileNavbar{
+        margin-top: 35px;
+    }*/
+    
+    
+}
+    
+    
+    
