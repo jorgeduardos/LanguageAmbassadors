@@ -612,17 +612,30 @@ fieldset label{
     padding: 0;
 }
 
+.nav-tabs{
+    font-size: 140%;
+}
+
 .container-form{
     margin-top: 25px;
     width: inherit;
+    font-size: 125%;
 }
 
 #translation div{
     margin-bottom: 10px;
 }
 
+.container-form input[type=text], .container-form textarea{
+    background-color:rgba(229, 229, 229, 0.90);
+}
+
 .container-form input[type=text], .container-form input[type=file]{
     float: right;
+}
+
+.container-form input[type=file]{
+    width: 245px;
 }
 
 
