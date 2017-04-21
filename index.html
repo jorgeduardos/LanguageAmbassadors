@@ -40,7 +40,31 @@
 
                               <!-- Tab panes -->
                               <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="home">Translation form</div>
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="container container-form">
+                                        <form method="post" id="translation">
+                                            <div class="subject_div">
+                                                 <label for="subject">Subject Matter</label>
+                                                <input type="text" name="subject" id="subject" maxlength="30"  required>
+                                           </div>
+                                           <div class="source_div">
+                                                <label for="source">Source Language</label>
+                                                <input type="text" name="source" id="source" maxlength="40" required>
+                                            </div>
+                                            <div class="target_div">
+                                                <label for="target">Target Language</label>
+                                                <input type="text" name="target" id="target" >
+                                            </div>
+                                            <div class="file_div">
+                                                <label>Choose File</label>
+                                                <input type="file" name="file">
+                                            </div>
+                                            <div>
+                                                <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">Interpretation form</div>
                                 <div role="tabpanel" class="tab-pane" id="messages">Terminology form</div>
                               </div>
