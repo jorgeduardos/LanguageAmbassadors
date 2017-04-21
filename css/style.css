@@ -638,6 +638,10 @@ fieldset label{
     width: 245px;
 }
 
+.formLabel{
+    font-weight: 400;
+}
+
 
 
 /* *************** GET QUOTE old *************** */
