@@ -576,8 +576,10 @@ fieldset label{
     position: fixed;
     right: 250px;
     width: 0;
-    /*top: 5%;              opcion*/
-    height: 100%;           /* puedes ser 90% */
+    top: 10%;   /*           opcion*/
+    height: 550px;           /* puedes ser 90% */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     margin-right: -250px;
     overflow-y: auto;
     background: rgba(101, 178, 98, 0.94);
@@ -604,6 +606,10 @@ fieldset label{
 
 /* Sidebar Styles */
 
+.container-fluid h1{
+    font-weight: 400;
+}
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -614,6 +620,15 @@ fieldset label{
 
 .nav-tabs{
     font-size: 140%;
+    font-weight: 400;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #242424;
+}
+
+.nav-tabs a{
+    color: #555;
 }
 
 .container-form{
@@ -628,6 +643,7 @@ fieldset label{
 
 .container-form input[type=text], .container-form textarea{
     background-color:rgba(229, 229, 229, 0.90);
+    border-radius: 5px;
 }
 
 .container-form input[type=text], .container-form input[type=file]{
@@ -638,9 +654,20 @@ fieldset label{
     width: 245px;
 }
 
+.container-form textarea{
+    width: 440px;
+    height: 120px;
+}
+
 .formLabel{
     font-weight: 400;
 }
+
+.submitBtnDiv{
+    text-align: center;
+}
+
+
 
 
 
