@@ -641,12 +641,25 @@ fieldset label{
     margin-bottom: 10px;
 }
 
-.container-form input[type=text], .container-form textarea{
+.lineDiv{
+    display: block;
+    width: 350px;
+    height: 1px;                        /*********************** quede aqui ********************/
+    content: " ";
+    background-color: #000;
+    margin: 25px auto;
+}
+
+.subject_div{
+    margin-top: 25px;
+}
+
+.container-form input[type=text], .container-form input[type=email], .container-form textarea{
     background-color:rgba(229, 229, 229, 0.90);
     border-radius: 5px;
 }
 
-.container-form input[type=text], .container-form input[type=file]{
+.container-form input[type=text], .container-form input[type=file], .container-form input[type=email]{
     float: right;
 }
 
@@ -667,9 +680,17 @@ fieldset label{
     text-align: center;
 }
 
-
-
-
+.submitQuoteBtn{
+    margin-top: 20px;
+    font-size: 120%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 7px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #0f23be, #0f153e);
+    background: linear-gradient(to right, #0f23be, #0f153e);
+    color: #fff;
+}
 
 /* *************** GET QUOTE old *************** */
 
