@@ -105,7 +105,8 @@ $(document).ready(function() {
        var window = $(this).attr('rel');
         $('.'+window).hide('slide', {direction: 'right'}, 1000);
     });
-    
+
+                                                /**********************************usar on change para nueva fuincion *****************************/
     
    /* management more */ 
     

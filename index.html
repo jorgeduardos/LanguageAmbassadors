@@ -82,7 +82,53 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile">Interpretation form</div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="container container-form">
+                                        <form method="post" id="interpretation">
+                                            <div class="quote_name_div">
+                                                <label class="formLabel" for="name">First &amp; Last Name</label>
+                                                <input type="text" name="name" id="name" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_email_div">
+                                                <label class="formLabel" for="email">Email</label>
+                                                <input type="email" name="email" id="email" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_number_div">
+                                                <label class="formLabel" for="number">Phone Number</label>
+                                                <input type="text" name="number" id="number">
+                                            </div>
+                                            <div class="lineDiv"></div>
+                                            <div class="interp_type_div">
+                                                <input type="radio" name="interpType" value="consecutive"><span class="formLabel interp_span">Consecutive</span>
+                                                <input id="simul" type="radio" name="interpType" value="simultaneous"><span class="formLabel interp_span">Simultaneous</span>
+                                                <input type="radio" name="interpType" value="conference"><span class="formLabel interp_span">Court</span>
+                                            </div>
+                                            <div class="interp_subject_div">
+                                                 <label class="formLabel" for="interp_subject">Subject Matter</label>
+                                                <input type="text" name="interp_subject" id="interp_subject" maxlength="30" required>
+                                           </div>
+                                           <div class="interp_language_div">
+                                                <label class="formLabel" for="language_pairs">Language Pairs</label>
+                                                <input type="text" name="language_pairs" id="language_pairs" maxlength="40" required>
+                                            </div>
+                                            <div class="interp_location_div">
+                                                <label class="formLabel" for="location">Location</label>
+                                                <input type="text" name="location" id="location">
+                                            </div>
+                                            <div class="interp_date_div">
+                                                <label class="formLabel" >Required Service Date</label>
+                                                <input type="date" name="date">
+                                            </div>
+                                            <div class="moreInfo_div">
+                                                <label class="formLabel">Comments</label>
+                                                <textarea name="comments"></textarea> 
+                                            </div>
+                                            <div class="submitBtnDiv">
+                                                <input id="interpretationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">Terminology form</div>
                               </div>
                         </div>

@@ -167,7 +167,7 @@ header{
 
 .wrap h1{
     font-family: 'Julius Sans One';
-    color: #5d5d5d;
+    color: #5d5d5d; 
     width: 100%;
     font-size: 490%;
     font-weight: 700;
@@ -578,8 +578,8 @@ fieldset label{
     width: 0;
     /* top=5%;           opcion*/
     height: 100%;           /* puedes ser 90% */
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+/*    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;*/
     margin-right: -250px;
     overflow-y: auto;
     background: rgba(101, 178, 98, 0.94);
@@ -644,7 +644,7 @@ fieldset label{
 .lineDiv{
     display: block;
     width: 350px;
-    height: 1px;                        /*********************** quede aqui ********************/
+    height: 1px;                        
     content: " ";
     background-color: #000;
     margin: 25px auto;
@@ -654,7 +654,7 @@ fieldset label{
     margin-top: 25px;
 }
 
-.container-form input[type=text], .container-form input[type=email], .container-form textarea{
+.container-form input[type=text], .container-form input[type=email], .container-form input[type=date], .container-form textarea{
     background-color:rgba(229, 229, 229, 0.90);
     border-radius: 5px;
 }
@@ -690,6 +690,16 @@ fieldset label{
     background: -webkit-linear-gradient(left, #0f23be, #0f153e);
     background: linear-gradient(to right, #0f23be, #0f153e);
     color: #fff;
+}
+
+.interp_type_div{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.interp_span{
+    margin-right: 20px;
+    margin-left: 5px;
 }
 
 /* *************** GET QUOTE old *************** */
