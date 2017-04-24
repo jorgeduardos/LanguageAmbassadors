@@ -637,7 +637,7 @@ fieldset label{
     font-size: 125%;
 }
 
-#translation div{
+#translation div, #interpretation div{
     margin-bottom: 10px;
 }
 
@@ -659,7 +659,7 @@ fieldset label{
     border-radius: 5px;
 }
 
-.container-form input[type=text], .container-form input[type=file], .container-form input[type=email]{
+.container-form input[type=text], .container-form input[type=file], .container-form input[type=email], .container-form input[type=date]{
     float: right;
 }
 
