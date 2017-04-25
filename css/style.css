@@ -576,10 +576,7 @@ fieldset label{
     position: fixed;
     right: 250px;
     width: 0;
-    /* top=5%;           opcion*/
-    height: 100%;           /* puedes ser 90% */
-/*    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;*/
+    height: 100%; 
     margin-right: -250px;
     overflow-y: auto;
     background: rgba(101, 178, 98, 0.94);

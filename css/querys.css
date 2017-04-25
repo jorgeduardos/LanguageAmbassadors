@@ -26,8 +26,6 @@
     .map{
         display: none;
     }
-    
-    
 }
 
 
@@ -71,6 +69,10 @@
     
     body{
         font-size: 145%;
+    }
+
+    #wrapper{
+        font-size: 105%;
     }
     
     .wrap{
@@ -189,14 +191,35 @@
     }
 
 
-    /***************** new querys *************************/
+@media only screen and (max-width: 700px){
+    
+    .service_info_div{
+        left: 40%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    header{
+        background-size: 650px;
+        background-position: center bottom;
+
+    }
+    
+    body{
+        font-size: 125%;;
+    }
+
 
     #wrapper {
         padding-left: 0;
+        font-size: 104.16%;
     }
 
     #wrapper.toggled {
-        padding-left: 250px;
+        padding-left: 480px;
     }
 
     #sidebar-wrapper {
@@ -204,7 +227,7 @@
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 250px;
+        width: 480px;
     }
 
     #page-content-wrapper {
@@ -217,62 +240,24 @@
         margin-right: 0;
     }
 
-}
-
-@media only screen and (max-width: 700px){
-    
-    .service_info_div{
-        left: 40%;
-    }
-    
-}
-
-
-@media only screen and (max-width: 480px) {
-    
-   /* header{
-        background-size: 700px;
-    }*/
-
-      header{
-        background-size: 650px;
-        background-position: center bottom;
-
-    }
-    /*.wrap .typed_div{
-        font-weight: bold;
-    }*/
-    
-    body{
-        font-size: 125%;;
-    }
-    
-    .getQuote{
-        width: 450px;
-        height: 300px;
-        font-size: 90%;
-    }
-    
-    .translation_container{
-        width: 450px;
-        height: 260px;
-        font-size: 90%;
-    }
-    
-    .interpretation_container{
-        width: 450px;
-        height: 285px;
-        font-size: 90%;
+    #tabsDiv{
+        width: 430px;
     }
 
-    .terminology_container{
-        width: 450px;
-        height: 280px;
-        font-size: 90%;
+    .sidebar-nav {
+        width: 480px;
+    }
+    
+    .lineDiv{
+        width: 245px;
     }
 
-    #terminology textarea{
-        height: 120px;
+    .container-form textarea{
+        width: 422.4px;
+    }
+
+    .container-form input[type=file]{
+        width: 235.2px;
     }
 
     .wrap{
@@ -343,41 +328,6 @@
 
 @media only screen and (max-width: 320px){
     
-    .getQuote{
-        width: 310px;
-        height: 300px;
-        font-size: 65%;
-    }
-    
-    .translation_container{
-        width: 310px;
-        height: 240px;
-        font-size: 65%;
-    }
-    
-    .interpretation_container{
-        width: 310px;
-        height: 250px;
-        font-size: 65%;
-    }
-
-    .terminology_container{
-        width: 310px;
-        height: 230px;
-        font-size: 65%;
-    }
-
-    #quote input, #translation input, .interp_subject_div input, .interp_language_div input, .interp_location_div input{
-        width: 110px;
-    }
-
-    .interp_date_div input{
-        width: 90px;
-    }
-
-    #terminology textarea{
-        height: 80px;
-    }
 
     
     .wrap{
@@ -388,11 +338,7 @@
         font-size: 40px;
         
     }
-    
-/*    .wrap .typed_div{
-        display: none;
-    }
-    */
+
     .service_info_div{
         position: absolute;
         bottom: 0;
@@ -402,11 +348,6 @@
     .logoLarge{
         height: 45px;
     }
-    
-    /*.rowM .mobileNavbar{
-        margin-top: 35px;
-    }*/
-        
     
 }
     
