@@ -321,9 +321,66 @@
 
     .rowM .mobileNavbar{
         margin-top: 35px;
+    }   
+}
+
+@media only screen and (max-width: 375px){
+
+    #wrapper.toggled {
+        padding-left: 375px;
     }
 
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 375px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #tabsDiv{
+        width: 335.93px;
+    }
+
+    .sidebar-nav {
+        width: 375px;
+    }
     
+    .lineDiv{
+        width: 191.4px;
+    }
+
+    .container-form textarea{
+        width: 315px;
+    }
+
+    .container-form input[type=text], .container-form input[type=email]{
+        width: 160px;
+    }
+
+    .container-form input[type=file]{
+        width: 160px;
+    }
+
+    .interp_span{
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    
+    .nav-tabs{
+        font-size: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 320px){
