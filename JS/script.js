@@ -93,6 +93,11 @@ $(document).ready(function() {
         $("#wrapper").toggleClass("toggled");
     });
 
+    $(".close_quote").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
 
     $('#myTabs a').click(function (e) {
       e.preventDefault()                             /*    BOOTSTRAP TABS   */

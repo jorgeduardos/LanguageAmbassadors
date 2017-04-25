@@ -606,6 +606,21 @@ fieldset label{
 
 /* Sidebar Styles */
 
+#wrapper .close_quote{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 170%;
+    font-weight: 300;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#wrapper .close_quote:hover{
+    color: #181818;
+}
+
 .container-fluid h1{
     font-weight: 400;
 }
@@ -690,6 +705,17 @@ fieldset label{
     background: -webkit-linear-gradient(left, #0f23be, #0f153e);
     background: linear-gradient(to right, #0f23be, #0f153e);
     color: #fff;
+    transition: background 1s;
+}
+
+.submitQuoteBtn:hover{
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.submitQuoteBtn:focus{
+    outline: none;
 }
 
 .interp_type_div{
