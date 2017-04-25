@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         
@@ -99,9 +99,9 @@
                                             </div>
                                             <div class="lineDiv"></div>
                                             <div class="interp_type_div">
-                                                <input type="radio" name="interpType" value="consecutive"><span class="formLabel interp_span">Consecutive</span>
+                                                <input id="consec" type="radio" name="interpType" value="consecutive"><span class="formLabel interp_span">Consecutive</span>
                                                 <input id="simul" type="radio" name="interpType" value="simultaneous"><span class="formLabel interp_span">Simultaneous</span>
-                                                <input type="radio" name="interpType" value="conference"><span class="formLabel interp_span">Court</span>
+                                                <input id="court" type="radio" name="interpType" value="conference"><span class="formLabel interp_span">Court</span>
                                             </div>
                                             <div class="interp_subject_div">
                                                  <label class="formLabel" for="interp_subject">Subject Matter</label>
@@ -115,9 +115,17 @@
                                                 <label class="formLabel" for="location">Location</label>
                                                 <input type="text" name="location" id="location">
                                             </div>
-                                            <div class="interp_date_div">
+                                            <div id="cDate" class="interp_date_div">
                                                 <label class="formLabel" >Required Service Date</label>
                                                 <input type="date" name="date">
+                                            </div>
+                                            <div class="interp_date_div js-date-invisible sDate">
+                                                <label class="formLabel" >Starting Service Date</label>
+                                                <input type="date" name="startingDate">
+                                            </div>
+                                            <div class="interp_date_div js-date-invisible sDate">
+                                                <label class="formLabel" >Ending Service Date</label>
+                                                <input type="date" name="endingDate">
                                             </div>
                                             <div class="moreInfo_div">
                                                 <label class="formLabel">Comments</label>

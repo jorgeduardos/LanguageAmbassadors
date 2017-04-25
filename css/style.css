@@ -681,7 +681,7 @@ fieldset label{
 }
 
 .submitQuoteBtn{
-    margin-top: 20px;
+    /*margin-top: 10px;*/
     font-size: 120%;
     font-weight: 400;
     letter-spacing: 1px;
@@ -988,7 +988,8 @@ footer{
     display: block;
 }
 
-.js--rowM-mobile{}
+.js-date-invisible{
+    display: none;
+}
     
-
 

@@ -106,7 +106,23 @@ $(document).ready(function() {
         $('.'+window).hide('slide', {direction: 'right'}, 1000);
     });
 
-                                                /**********************************usar on change para nueva fuincion *****************************/
+     
+
+    $("#simul").on("change", function(){
+      $(".sDate").removeClass("js-date-invisible");
+      $("#cDate").addClass("js-date-invisible");
+    });
+
+    $("#consec").on("change", function(){
+      $(".sDate").addClass("js-date-invisible");
+      $("#cDate").removeClass("js-date-invisible");
+    });
+
+    $("#court").on("change", function(){
+      $(".sDate").addClass("js-date-invisible");
+      $("#cDate").removeClass("js-date-invisible");
+    });
+
     
    /* management more */ 
     
