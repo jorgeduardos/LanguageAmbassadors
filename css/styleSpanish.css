@@ -27,21 +27,9 @@ header{
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -72,7 +60,7 @@ header{
 
 .rowM .navbar li {
     display: inline-block;
-    margin: 10px 0 10px; 0; 
+    margin: 10px 0 10px 0; 
     border-right: 1px solid #355729;
     padding: 0 10px 0 10px;  
     font-weight: 300;
@@ -133,7 +121,7 @@ header{
 
 .mobileNavbar li{
     display: block;
-    margin: 10px 0 10px; 0; 
+    margin: 10px 0 10px 0; 
     padding: 0 10px 0 10px;  
     font-weight: 400;
 }
@@ -549,9 +537,6 @@ fieldset label{
 
 #wrapper {
     padding-right: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -568,9 +553,6 @@ fieldset label{
     margin-right: -250px;
     overflow-y: auto;
     background: rgba(101, 178, 98, 0.94);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -687,14 +669,12 @@ fieldset label{
     letter-spacing: 1px;
     padding: 7px;
     border-radius: 15px;
-    background: -webkit-linear-gradient(left, #0f23be, #0f153e);
     background: linear-gradient(to right, #0f23be, #0f153e);
     color: #fff;
 }
 
 .submitQuoteBtn:hover{
-    background: #43cea2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #43cea2;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -782,4 +762,3 @@ footer{
     display: none;
 }
    
-

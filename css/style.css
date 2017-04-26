@@ -1,8 +1,7 @@
 /* colors:  #58A53C  #2745AF  #ABD19D   #bfdcb4*/
 *{
     margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    padding: 0; box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -29,15 +28,9 @@ header{
 .typed-cursor{
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    -webkit-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-    50% { opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
-    100% { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-}
-@-webkit-keyframes blink{
     0% { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
     50% { opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
     100% { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
@@ -286,7 +279,6 @@ header{
 }
 
 .info:hover{ 
-    -webkit-transition: border-color 0.5s, color 0.5s,  background-color 0.5s, bottom 0.5s, box-shadow 0.5s; 
     transition: border-color 0.5s, color 0.5s,  background-color 0.5s, bottom 0.5s, box-shadow 0.5s;
     bottom: 0;
     border-color: #719e7f;
@@ -297,7 +289,6 @@ header{
 }
 
 .translation{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/bigimg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/bigimg.jpg); 
     background-attachment: fixed;
     background-position: center;
@@ -330,7 +321,6 @@ header{
 .interpretation{
     text-align: center;
     color: #d0cece;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/interpretation-1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/interpretation-1.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -561,9 +551,6 @@ fieldset label{
 
 #wrapper {
     padding-right: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -580,9 +567,6 @@ fieldset label{
     margin-right: -250px;
     overflow-y: auto;
     background: rgba(101, 178, 98, 0.94);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -699,14 +683,12 @@ fieldset label{
     letter-spacing: 1px;
     padding: 7px;
     border-radius: 15px;
-    background: -webkit-linear-gradient(left, #0f23be, #0f153e);
     background: linear-gradient(to right, #0f23be, #0f153e);
     color: #fff;
 }
 
 .submitQuoteBtn:hover{
-    background: #43cea2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #43cea2;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -796,4 +778,3 @@ footer{
     display: none;
 }
     
-
