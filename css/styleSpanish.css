@@ -543,10 +543,180 @@ fieldset label{
 }
 
 
-/* *************** GET QUOTE *************** */
+/***********************************************************/
+/*                    GET QUOTE NEW                        */
+/**********************************************************/
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%; 
+    margin-right: -250px;
+    overflow-y: auto;
+    background: rgba(101, 178, 98, 0.94);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 500px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+#wrapper .close_quote{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 170%;
+    font-weight: 300;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#wrapper .close_quote:hover{
+    color: #181818;
+}
+
+.container-fluid h1{
+    font-weight: 400;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-tabs{
+    font-size: 140%;
+    font-weight: 400;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #242424;
+}
+
+.nav-tabs a{
+    color: #555;
+}
+
+.container-form{
+    margin-top: 25px;
+    width: inherit;
+    font-size: 125%;
+}
+
+#translation div, #interpretation div{
+    margin-bottom: 10px;
+}
+
+.lineDiv{
+    display: block;
+    width: 350px;
+    height: 1px;                        
+    content: " ";
+    background-color: #000;
+    margin: 25px auto;
+}
+
+.subject_div, .term_div{
+    margin-top: 25px;
+}
+
+.container-form input[type=text], .container-form input[type=email], .container-form input[type=date], .container-form textarea{
+    background-color:rgba(229, 229, 229, 0.90);
+    border-radius: 5px;
+}
+
+.container-form input[type=text], .container-form input[type=file], .container-form input[type=email], .container-form input[type=date]{
+    float: right;
+}
+
+.container-form input[type=file]{
+    width: 245px;
+}
+
+.container-form textarea{
+    width: 440px;
+    height: 120px;
+}
+
+.formLabel{
+    font-weight: 400;
+}
+
+.submitBtnDiv{
+    text-align: center;
+}
+
+.submitQuoteBtn{
+    /*margin-top: 10px;*/
+    font-size: 120%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 7px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #0f23be, #0f153e);
+    background: linear-gradient(to right, #0f23be, #0f153e);
+    color: #fff;
+}
+
+.submitQuoteBtn:hover{
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.submitQuoteBtn:focus{
+    outline: none;
+}
+
+.interp_type_div{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.interp_span{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+/* *************** GET QUOTE old *************** */
 
 
-.getQuote{
+
+/*.getQuote{
     position: fixed;
     right: 0;
     top: 5%;
@@ -624,7 +794,6 @@ a .close_quote{
     background-color: rgba(101, 178, 98, 0.94);
     border-radius: 15px 0 0 15px;
     z-index: 100;
-   /* display: none;*/
 }
 
 .translation_inner{
@@ -686,7 +855,6 @@ a .close_translation{
     background-color: rgba(101, 178, 98, 0.94);
     border-radius: 15px 0 0 15px;
     z-index: 100;
-   /* display: none;*/
 }
 
 .interpretation_inner{
@@ -734,7 +902,6 @@ a .close_interpretation{
     background-color: rgba(101, 178, 98, 0.94);
     border-radius: 15px 0 0 15px;
     z-index: 100;
-   /* display: none;*/
 }
 
 .terminology_inner{
@@ -761,7 +928,7 @@ a .close_terminology{
     color: #000;
     text-decoration: none; 
     cursor: pointer;
-}
+}*/
 
 
 /* ********************* FOOTER ********************** */
