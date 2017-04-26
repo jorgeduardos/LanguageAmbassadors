@@ -997,7 +997,8 @@ footer{
     display: block;
 }
 
-.js--rowM-mobile{}
-    
-
+.js-date-invisible{
+    display: none;
+}
+   
 
