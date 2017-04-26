@@ -653,6 +653,8 @@ fieldset label{
 .container-form input[type=text], .container-form input[type=email], .container-form input[type=date], .container-form textarea{
     background-color:rgba(229, 229, 229, 0.90);
     border-radius: 5px;
+    width: 245px;
+    height:31px;
 }
 
 .container-form input[type=text], .container-form input[type=file], .container-form input[type=email], .container-form input[type=date]{
