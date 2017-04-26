@@ -35,11 +35,6 @@
     
 }
 
-@media only screen and (max-width: 1300px){
-    
-    
-    
-}
 
 @media only screen and (max-width: 1061px) {
     
@@ -72,6 +67,10 @@
     
     body{
         font-size: 145%;
+    }
+
+    #wrapper{
+        font-size: 105%;
     }
     
     .wrap{
@@ -201,10 +200,6 @@
 
 
 @media only screen and (max-width: 480px) {
-    
-    /*header{
-        background-size: 700px;
-    }*/
 
     header{
         background-size: 650px;
@@ -216,32 +211,51 @@
         font-size: 125%;;
     }
     
-    .getQuote{
-        width: 450px;
-        height: 300px;
-        font-size: 90%;
-    }
-    
-    .translation_container{
-        width: 450px;
-        height: 260px;
-        font-size: 90%;
-    }
-    
-    .interpretation_container{
-        width: 450px;
-        height: 285px;
-        font-size: 90%;
-    }
- 
-    .terminology_container{
-        width: 450px;
-        height: 280px;
-        font-size: 90%;
+     #wrapper {
+        padding-left: 0;
+        font-size: 104.16%;
     }
 
-    #terminology textarea{
-        height: 100px;
+    #wrapper.toggled {
+        padding-left: 480px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 480px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #tabsDiv{
+        width: 430px;
+    }
+
+    .sidebar-nav {
+        width: 480px;
+    }
+    
+    .lineDiv{
+        width: 245px;
+    }
+
+    .container-form textarea{
+        width: 422.4px;
+    }
+
+    .container-form input[type=file]{
+        width: 235.2px;
     }
 
     .wrap{
@@ -308,43 +322,141 @@
     
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 414px){
 
-    .getQuote{
-        width: 310px;
-        height: 300px;
-        font-size: 65%;
+    #wrapper.toggled {
+        padding-left: 414px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 414px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #tabsDiv{
+        width: 370.86px;
+    }
+
+    .sidebar-nav {
+        width: 414px;
     }
     
-    .translation_container{
-        width: 310px;
-        height: 240px;
-        font-size: 65%;
+    .lineDiv{
+        width: 210.8px;
+    }
+
+    .container-form textarea{
+        width: 347.76px;
+    }
+
+    .container-form input[type=text], .container-form input[type=email]{
+        width: 176.64px;
+    }
+
+    .container-form input[type=file]{
+        width: 176.64px;
+    }
+
+    .interp_span{
+        margin-right: 10px;
+        margin-left: 0;
     }
     
-    .interpretation_container{
-        width: 310px;
+    .nav-tabs{
+        font-size: 100%;
+    }
+
+    .service_info_div{
+        left: 38%;
+    }
+
+    div.col-sm-4.ts{
         height: 250px;
-        font-size: 65%;
-    }
- 
-    .terminology_container{
-        width: 310px;
-        height: 230px;
-        font-size: 65%;
     }
 
-    #quote input, #translation input, .interp_subject_div input, .interp_language_div input, .interp_location_div input{
-        width: 110px;
+}
+
+@media only screen and (max-width: 375px){
+
+    #wrapper.toggled {
+        padding-left: 375px;
     }
 
-    .interp_date_div input{
-        width: 90px;
+    #sidebar-wrapper {
+        width: 0;
     }
 
-    #terminology textarea{
-        height: 80px;
+    #wrapper.toggled #sidebar-wrapper {
+        width: 375px;
     }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #tabsDiv{
+        width: 335.93px;
+    }
+
+    .sidebar-nav {
+        width: 375px;
+    }
+    
+    .lineDiv{
+        width: 191.4px;
+    }
+
+    .container-form textarea{
+        width: 315px;
+    }
+
+    .container-form input[type=text], .container-form input[type=email]{
+        width: 160px;
+    }
+
+    .container-form input[type=file]{
+        width: 160px;
+    }
+
+    .interp_span{
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+    
+    .nav-tabs{
+        font-size: 100%;
+    }
+
+    .service_info_div{
+        left: 38%;
+    }
+
+    div.col-sm-4.ts{
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
     
     .wrap{
         top: 11%;
@@ -354,11 +466,7 @@
         font-size: 40px;
         
     }
-    
-    /*.wrap .typed_div{
-        display: none;
-    }*/
-    
+
     .service_info_div{
         position: absolute;
         bottom: 0;
