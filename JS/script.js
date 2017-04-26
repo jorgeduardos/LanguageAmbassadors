@@ -23,7 +23,7 @@ $(document).ready(function() {
     
     $(function(){
 		$(".typed").typed({
-			strings: ["Las barreras del idioma nunca han <br> sido tan delgadas", "Le barriere linguistiche mai sono<br> stato cosi sottili", "Language barriers never were so thin." ],
+			strings: ["Donde las barreras del idioma desparacen", "Dove le barriere linguistiche svaniscono", "Where language barriers fade away" ],
 			typeSpeed: 10,
             backSpeed: 0
 		});
