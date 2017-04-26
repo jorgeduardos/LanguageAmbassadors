@@ -517,6 +517,10 @@ fieldset input, fieldset textarea{
     float: right
 }
 
+fieldset input{
+    height:31px;
+}
+
 .submit_contact{
     margin-top: 15px;
     position: absolute;
