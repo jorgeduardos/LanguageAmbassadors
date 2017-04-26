@@ -24,104 +24,150 @@
         <title>Language Ambassadors</title>
     </head>
     <body>
-        <div class="getQuote js--getQuote">
-            <a rel="js--getQuote" class="js--close_general"><i class="ion-ios-close-empty close_quote"></i></a>
-            <div class="quote_inner">
-                <h1>Cotización</h1>
-                <form method="post" id="quote">
-                    <h3>Información de Contacto</h3>
-                    <div class="quote_name_div">
-                        <label for="name">Nombre y Apellido</label>
-                        <input type="text" name="name" id="name" maxlength="40" required>
+<div id="wrapper">
+            <div id="sidebar-wrapper">
+                <div class="sidebar-nav">
+                    <a class="js--close_general"><i class="ion-close-round close_quote"></i></a>
+                    <div class="container-fluid"> 
+                        <h1>Cotizacion</h1>
+                        <div id="tabsDiv">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Traducción</a></li>
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Interpretación</a></li>
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Terminología</a></li>
+                              </ul>
+
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="container container-form">
+                                        <form method="post" id="translation">
+                                            <div class="quote_name_div">
+                                                <label class="formLabel" for="name">Nombre y Apellido</label>
+                                                <input type="text" name="name" id="name" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_email_div">
+                                                <label class="formLabel" for="email">Email</label>
+                                                <input type="email" name="email" id="email" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_number_div">
+                                                <label class="formLabel" for="number">Teléfono</label>
+                                                <input type="text" name="number" id="number">
+                                            </div>
+                                            <div class="lineDiv"></div>
+                                            <div class="subject_div">
+                                                 <label class="formLabel" for="subject">Tema</label>
+                                                <input type="text" name="subject" id="subject" maxlength="30"  required>
+                                           </div>
+                                           <div class="source_div">
+                                                <label class="formLabel" for="source">Idioma de partida</label>
+                                                <input type="text" name="source" id="source" maxlength="40" required>
+                                            </div>
+                                            <div class="target_div">
+                                                <label class="formLabel" for="target">Idioma de llegada</label>
+                                                <input type="text" name="target" id="target" >
+                                            </div>
+                                            <div class="file_div">
+                                                <label class="formLabel">Archivo</label>
+                                                <input type="file" name="file">
+                                            </div>
+                                            <div class="moreInfo_div">
+                                                <label class="formLabel">Comentarios</label>
+                                                <textarea name="comments"></textarea> 
+                                            </div>
+                                            <div class="submitBtnDiv">
+                                                <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="container container-form">
+                                        <form method="post" id="interpretation">
+                                            <div class="quote_name_div">
+                                                <label class="formLabel" for="name">Nombre y Apellido</label>
+                                                <input type="text" name="name" id="name" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_email_div">
+                                                <label class="formLabel" for="email">Email</label>
+                                                <input type="email" name="email" id="email" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_number_div">
+                                                <label class="formLabel" for="number">Teléfono</label>
+                                                <input type="text" name="number" id="number">
+                                            </div>
+                                            <div class="lineDiv"></div>
+                                            <div class="interp_type_div">
+                                                <input id="consec" type="radio" name="interpType" value="consecutive"><span class="formLabel interp_span">Consecutiva</span>
+                                                <input id="simul" type="radio" name="interpType" value="simultaneous"><span class="formLabel interp_span">Simultánea</span>
+                                                <input id="court" type="radio" name="interpType" value="conference"><span class="formLabel interp_span">Legal</span>
+                                            </div>
+                                            <div class="interp_subject_div">
+                                                 <label class="formLabel" for="interp_subject">Tema</label>
+                                                <input type="text" name="interp_subject" id="interp_subject" maxlength="30" required>
+                                           </div>
+                                           <div class="interp_language_div">
+                                                <label class="formLabel" for="language_pairs">Idiomas</label>
+                                                <input type="text" name="language_pairs" id="language_pairs" maxlength="40" required>
+                                            </div>
+                                            <div class="interp_location_div">
+                                                <label class="formLabel" for="location">Ubicación</label>
+                                                <input type="text" name="location" id="location">
+                                            </div>
+                                            <div id="cDate" class="interp_date_div">
+                                                <label class="formLabel" >Fecha</label>
+                                                <input type="date" name="date">
+                                            </div>
+                                            <div class="interp_date_div js-date-invisible sDate">
+                                                <label class="formLabel" >Comenzando</label>
+                                                <input type="date" name="startingDate">
+                                            </div>
+                                            <div class="interp_date_div js-date-invisible sDate">
+                                                <label class="formLabel" >Terminando</label>
+                                                <input type="date" name="endingDate">
+                                            </div>
+                                            <div class="moreInfo_div">
+                                                <label class="formLabel">Comentarios</label>
+                                                <textarea name="comments"></textarea> 
+                                            </div>
+                                            <div class="submitBtnDiv">
+                                                <input id="interpretationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages">
+                                    <div class="container container-form">
+                                        <form method="post" id="interpretation">
+                                            <div class="quote_name_div">
+                                                <label class="formLabel" for="name">Nombre y Apellido</label>
+                                                <input type="text" name="name" id="name" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_email_div">
+                                                <label class="formLabel" for="email">Email</label>
+                                                <input type="email" name="email" id="email" maxlength="40" required>
+                                            </div>
+                                            <div class="quote_number_div">
+                                                <label class="formLabel" for="number">Telefono</label>
+                                                <input type="text" name="number" id="number">
+                                            </div>
+                                            <div class="lineDiv"></div>
+                                            <form method="post" id="terminology">
+                                                <div class="term_div">
+                                                    <label class="formLabel">Proporcione una breve descripción de sus necesidades terminológicas:</label>
+                                                    <textarea name="terminology" cols="60" rows="7"></textarea> 
+                                                </div>
+                                            </form>
+                                            <div class="submitBtnDiv">
+                                                <input id="terminologySubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="quote_email_div">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" maxlength="40" required>
-                    </div>
-                    <div class="quote_number_div">
-                        <label for="number">Teléfono</label>
-                        <input type="text" name="number" id="numer">
-                    </div>
-                </form>
-                <div class="buttons_div">
-                    <h4>Servicio Requerido</h4>
-                    <button type="button" rel="js--translation" class="translation_button js--generalQuote_btn">Traducción</button>
-                    <button type="button"  rel="js--interpretation" class="interpret_button js--generalQuote_btn">Interpretación</button>
-                    <button type="button" rel="js--terminology" class="term_button js--generalQuote_btn">Terminología</button>
-                </div>
-            </div>
-        </div>
-        <div class="translation_container js--quote-container js--translation">
-            <a rel="js--translation" class="js--close_general"><i class="ion-ios-close-empty close_translation"></i></a>
-            <div class="translation_inner">
-                <form method="post" id="translation">
-                    <h3>Traducción</h3>
-                    <div class="subject_div">
-                         <label for="subject">Tema</label>
-                        <input type="text" name="subject" id="subject" maxlength="30" required>
-                   </div>
-                   <div class="source_div">
-                        <label for="source">Idioma de Partida</label>
-                        <input type="text" name="source" id="source" maxlength="40" required>
-                    </div>
-                    <div class="target_div">
-                        <label for="target">Idioma de Llegada</label>
-                        <input type="text" name="target" id="target">
-                    </div>
-                    <div class="file_div">
-                        <label>Archivo</label>
-                        <input type="file" name="file">
-                    </div>
-                </form>
-                <div class="getQuote_div">
-                    <button type="button" class="getQuote_button">Enviar</button>
-                </div>
-            </div>
-        </div>
-        <div class="interpretation_container js--quote-container js--interpretation">
-            <a rel="js--interpretation" class="js--close_general"><i class="ion-ios-close-empty close_interpretation"></i></a>
-            <div class="interpretation_inner">
-                <form method="post" id="interpretation">
-                    <h3>Interpretación</h3>
-                    <div class="interp_type_div">
-                        <input type="checkbox" name="consecutive" value="consecutive"><span class="interp_span">Consecutiva</span>
-                        <input type="checkbox" name="simultaneous" value="simultaneous"><span class="interp_span">Simultánea</span>
-                        <input type="checkbox" name="conference" value="conference"><span class="interp_span">Legal</span>
-                    </div>
-                    <div class="interp_subject_div">
-                         <label for="interp_subject">Tema</label>
-                        <input type="text" name="interp_subject" id="interp_subject" maxlength="30" required>
-                   </div>
-                   <div class="interp_language_div">
-                        <label for="language_pairs">Idiomas</label>
-                        <input type="text" name="language_pairs" id="language_pairs" maxlength="40" required>
-                    </div>
-                    <div class="interp_location_div">
-                        <label for="location">Ubicación</label>
-                        <input type="text" name="location" id="location">
-                    </div>
-                    <div class="interp_date_div">
-                        <label>Fecha Requerida</label>
-                        <input type="date" name="date">
-                    </div>
-                </form>
-                <div class="getQuote_div">
-                    <button type="button" class="getQuote_button">Enviar</button>
-                </div>
-            </div>
-        </div>
-        <div class="terminology_container js--quote-container js--terminology">
-            <a rel="js--terminology" class="js--close_general"><i class="ion-ios-close-empty close_terminology"></i></a>
-            <div class="terminology_inner">
-                <form method="post" id="terminology">
-                    <h3>Terminología</h3>
-                    <div class="term_div">
-                        <label>Proporcione una breve descripción de sus necesidades terminológicas:</label>
-                        <textarea name="terminology" cols="60" rows="6"></textarea> 
-                    </div>
-                </form>
-                <div class="getQuote_div">
-                    <button type="button" class="getQuote_button">Enviar</button>
                 </div>
             </div>
         </div>
