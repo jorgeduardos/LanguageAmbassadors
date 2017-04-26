@@ -1,5 +1,10 @@
 $(document).ready(function() {
-        
+    
+ //---------- function to check if a particular class exist in the DOM (returns boolean)   
+    $.fn.exists = function () {
+    return this.length !== 0;
+}
+    
         var map = new GMaps({
           div: '.map',
           lat: 29.759282,
@@ -16,16 +21,14 @@ $(document).ready(function() {
             }
         });
     
-    Hyphenator.run();
-
     $(function(){
-		$(".typed").typed({
-			strings: ["Le barriere linguistiche mai sono<br> stato cosi sottili", "Language barriers never were so thin", "Las barreras del idioma nunca han <br> sido tan delgadas." ],
-			typeSpeed: 10,
+    $(".typed").typed({
+      strings: ["Las barreras del idioma nunca han <br> sido tan delgadas", "Le barriere linguistiche mai sono<br> stato cosi sottili", "Language barriers never were so thin." ],
+      typeSpeed: 10,
             backSpeed: 0
-		});
-	});
-    
+    });
+  });
+
     
     /* NAV BAR ANIMATIONS */
     
@@ -79,47 +82,57 @@ $(document).ready(function() {
 
     
    
-    /*  GET QUOTE ANIMATIONS */
+    /*     GET QUOTE ANIMATIONS */
+
+
     
-    
-    
-    
-    $('.js--nav-quote').click(function(){
-        $('.js--getQuote').toggle('slide', {direction: 'right'}, 1000);
+        /******************* NEW GET QUOTE SIDE BAR ************************/
+
+    $(".js--nav-quote").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
-    
-    
-    $(".js--generalQuote_btn").click(function(){
-        
-        var window = $(this).attr('rel');
-        var activeContainer = $('.js--active').exists();
-        
-        if( activeContainer === false ){
-                $('.'+window).show('slide', {direction: 'right'}, 1000, function(){
-                    $(this).addClass('js--active');
-                });
-        }else{
-    
-            $('.js--quote-container.js--active').hide('slide', {direction: 'right'}, 500, function(){
-                $(this).removeClass('js--active');
-                $('.'+window).show('slide', {direction: 'right'}, 1000, function(){
-                    $(this).addClass('js--active');
-                });
-            });
-        } 
+
+    $(".close_quote").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
+
+
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()                             /*    BOOTSTRAP TABS   */
+      $(this).tab('show')
+    })
+        
     
     
     $(".js--close_general").click(function(){
        var window = $(this).attr('rel');
         $('.'+window).hide('slide', {direction: 'right'}, 1000);
     });
-    
+
+     
+
+    $("#simul").on("change", function(){
+      $(".sDate").removeClass("js-date-invisible");
+      $("#cDate").addClass("js-date-invisible");
+    });
+
+    $("#consec").on("change", function(){
+      $(".sDate").addClass("js-date-invisible");
+      $("#cDate").removeClass("js-date-invisible");
+    });
+
+    $("#court").on("change", function(){
+      $(".sDate").addClass("js-date-invisible");
+      $("#cDate").removeClass("js-date-invisible");
+    });
+
     
    /* management more */ 
     
     $('.management_more').click(function(){
-       $('#moreInfo').dialog({width: 600, title: "Algunos de los eventos en los que Rosanna ha interpretado:", draggable: false});
+       $('#moreInfo').dialog({width: 600, title: "Some events where Rosanna has interpreted:", draggable: false});
     });
     
 
@@ -133,7 +146,3 @@ $(document).ready(function() {
     
     
 });
-
-$.fn.exists = function () {
-    return this.length !== 0;
-}
