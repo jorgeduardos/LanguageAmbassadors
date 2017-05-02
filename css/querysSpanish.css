@@ -202,9 +202,9 @@
 @media only screen and (max-width: 480px) {
 
     header{
-        background-size: 650px;
-        background-position: center bottom;
-
+        background-size: 750px;
+        /*background-position: center bottom;*/
+        background-position: 50% 85%;
     }
     
     body{
@@ -386,6 +386,11 @@
     div.col-sm-4.ts{
         height: 250px;
     }
+    
+    .contact_fieldset input[type=text], .contact_fieldset input[type=email], .contact_fieldset textarea{
+        float: none;
+        width: 100%;
+    } 
 
 }
 

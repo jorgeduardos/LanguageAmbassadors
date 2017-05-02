@@ -16,15 +16,6 @@ body{
     
 }
 
-header{
-    background-image: url(images/newBackground1583new.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    text-align: center;
-}
-
 .typed-cursor{
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -150,6 +141,15 @@ header{
 
 
 /****************** HEADER ******************/
+
+header{
+    background-image: url(images/newBackground1583new.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
 
 .wrap{
     position: absolute;
@@ -531,7 +531,7 @@ fieldset input, fieldset textarea{
     float: right
 }
 
-fieldset input[type=text]{
+fieldset input[type=text], fieldset input[type=email]{
     height:31px;
 }
 

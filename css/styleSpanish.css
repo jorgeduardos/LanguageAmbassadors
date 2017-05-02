@@ -517,7 +517,7 @@ fieldset input, fieldset textarea{
     float: right
 }
 
-fieldset input[type=text]{
+fieldset input[type=text], fieldset input[type=email]{
     height:31px;
 }
 
