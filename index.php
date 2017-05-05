@@ -1,18 +1,4 @@
-﻿<?php
-header('Content-type: text/html; charset=utf-8');
-
-session_start();
-
-require_once 'helpers/security.php';
-
-
-$errors = isset($_SESSION['errors']) ? $_SESSION['errors']: [];
-$fields = isset($_SESSION['fields']) ? $_SESSION['fields']: [];
-
-?>
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -54,17 +40,17 @@ $fields = isset($_SESSION['fields']) ? $_SESSION['fields']: [];
                               </ul>
 
                               <!-- Tab panes -->
-                              <div class="tab-content">
+                              <div class="tab-content" id="form">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" id="translation">
+                                        <form method="post" action="contact.php" id="translation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
-                                                <input type="text" name="name" id="name" maxlength="40" required <?php echo isset($fields['name']) ? 'value="'. e($fields['name']) .'"' : '' ?> >
+                                                <input type="text" name="name" id="name" maxlength="40" required>
                                             </div>
                                             <div class="quote_email_div">
                                                 <label class="formLabel" for="email">Email</label>
-                                                <input type="email" name="email" id="email" maxlength="40" required <?php echo isset($fields['email']) ? 'value="'. e($fields['email']) .'"' : '' ?> >
+                                                <input type="email" name="email" id="email" maxlength="40" required>
                                             </div>
                                             <div class="quote_number_div">
                                                 <label class="formLabel" for="number">Phone Number</label>
@@ -89,14 +75,17 @@ $fields = isset($_SESSION['fields']) ? $_SESSION['fields']: [];
                                             </div>
                                             <div class="moreInfo_div">
                                                 <label class="formLabel">Comments</label>
-                                                <textarea name="comments" <?php echo isset($fields['comments']) ? e($fields['comments']) : '' ?> ></textarea> 
+                                                <textarea name="comments"></textarea> 
                                             </div>
 
-                                            <?php if(!empty($errors)); ?>
-                                            <div class="panel">
-                                                <<ul><li><?php echo implode(', ', $errors)?></li></ul>
-                                            </div> 
-                                            <?php endif; ?>
+                                            <?php 
+                                                if($GET['success'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>"   
+                                                }
+                                                if($GET['success'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> "
+                                                }
+                                            ?>
 
                                             <div class="submitBtnDiv">
                                                 <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
