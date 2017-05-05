@@ -1,7 +1,20 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+session_start();
+
+require_once 'helpers/security.php';
+
+
+$errors = isset($_SESSION['errors']) ? $_SESSION['errors']: [];
+$fields = isset($_SESSION['fields']) ? $_SESSION['fields']: [];
+
+?>
+
+
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -46,11 +59,11 @@
                                         <form method="post" id="translation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
-                                                <input type="text" name="name" id="name" maxlength="40" required>
+                                                <input type="text" name="name" id="name" maxlength="40" required <?php echo isset($fields['name']) ? 'value="'. e($fields['name']) .'"' : '' ?> >
                                             </div>
                                             <div class="quote_email_div">
                                                 <label class="formLabel" for="email">Email</label>
-                                                <input type="email" name="email" id="email" maxlength="40" required>
+                                                <input type="email" name="email" id="email" maxlength="40" required <?php echo isset($fields['email']) ? 'value="'. e($fields['email']) .'"' : '' ?> >
                                             </div>
                                             <div class="quote_number_div">
                                                 <label class="formLabel" for="number">Phone Number</label>
@@ -75,8 +88,15 @@
                                             </div>
                                             <div class="moreInfo_div">
                                                 <label class="formLabel">Comments</label>
-                                                <textarea name="comments"></textarea> 
+                                                <textarea name="comments" <?php echo isset($fields['comments']) ? e($fields['comments']) : '' ?> ></textarea> 
                                             </div>
+
+                                            <?php if(!empty($errors)); ?>
+                                            <div class="panel">
+                                                <<ul><li><?php echo implode(', ', $errors)?></li></ul>
+                                            </div> 
+                                            <?php endif; ?>
+
                                             <div class="submitBtnDiv">
                                                 <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
                                             </div>
@@ -369,5 +389,8 @@
     </body>
 </html>
 
-
+<?php
+unset($_SESSION['errors']);
+unset($_SESSION['fields']);
+?>
 
