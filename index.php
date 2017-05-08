@@ -382,7 +382,7 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a href="spanish.html">Español</a></li>
+                    <li><a href="spanish.php">Español</a></li>
                   </ul>
                 </div>
                 <h4>&#169; Language Ambassadors, LLC</h4>
