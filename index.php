@@ -214,7 +214,7 @@
                     <li><a href="#" class="js--nav-contact">Contact Us</a></li>
                     <li><a class="nav_quote_btn js--nav-quote">Quote Request</a></li>
                 </ul>
-            
+
             <div class="needHelp_div">
                 <h3>Need Help?</h3>
                 <p>1-832-606-9729</p>
@@ -222,6 +222,7 @@
                 <img class="logoLarge" src="images/logoQualityLong.png" alt="L.A logo large">
             </div>
         </div>
+        <!-- header -->
         <header class="mainmsg js--home">
             <div class="wrap">
                 <h1>Language<span class="ambassadors">Ambassadors <span class="llc">LLC</span></span></h1>
