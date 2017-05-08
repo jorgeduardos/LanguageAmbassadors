@@ -79,10 +79,10 @@
                                             </div>
 
                                             <?php 
-                                                if($GET['success'] == 1){
+                                                if($_GET['tsuccess'] == 1){
                                                     echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
                                                 }
-                                                if($GET['success'] == -1){
+                                                if($_GET['tsuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
                                                 }
                                             ?>
@@ -143,10 +143,10 @@
                                                 <textarea name="comments"></textarea> 
                                             </div>
                                             <?php 
-                                                if($GET['success'] == 1){
+                                                if($_GET['isuccess'] == 1){
                                                     echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
                                                 }
-                                                if($GET['success'] == -1){
+                                                if($_GET['isuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
                                                 }
                                             ?>
@@ -177,10 +177,10 @@
                                                 <textarea name="terminology" cols="60" rows="7"></textarea> 
                                             </div>
                                             <?php 
-                                                if($GET['success'] == 1){
+                                                if($_GET['tersuccess'] == 1){
                                                     echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
                                                 }
-                                                if($GET['success'] == -1){
+                                                if($_GET['tersuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
                                                 }
                                             ?>
@@ -351,10 +351,10 @@
                                     <textarea name="message" cols="25" rows="5"></textarea>
                                 </div>
                                 <?php 
-                                    if($GET['success'] == 1){
+                                    if($_GET['csuccess'] == 1){
                                         echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
                                     }
-                                    if($GET['success'] == -1){
+                                    if($_GET['csuccess'] == -1){
                                         echo "<div class=\"form-messages error\">Something went wrong.</div> ";
                                     }
                                 ?>
