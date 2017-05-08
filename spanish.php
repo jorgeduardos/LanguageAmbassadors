@@ -42,7 +42,7 @@
                               <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" id="translation">
+                                        <form method="post" action="php/translationMailer.php" id="translation" enctype="multipart/form-data">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -76,6 +76,14 @@
                                                 <label class="formLabel">Comentarios</label>
                                                 <textarea name="comments"></textarea> 
                                             </div>
+                                            <?php 
+                                                if($_GET['tsuccess'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                }
+                                                if($_GET['tsuccess'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                }
+                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
@@ -84,7 +92,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">
                                     <div class="container container-form">
-                                        <form method="post" id="interpretation">
+                                        <form method="post" action="php/interpretationMailer.php" id="interpretation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -131,6 +139,14 @@
                                                 <label class="formLabel">Comentarios</label>
                                                 <textarea name="comments"></textarea> 
                                             </div>
+                                            <?php 
+                                                if($_GET['isuccess'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                }
+                                                if($_GET['isuccess'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                }
+                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="interpretationSubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
@@ -139,7 +155,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
                                     <div class="container container-form">
-                                        <form method="post" id="interpretation">
+                                        <form method="post" id="terminology" action="php/terminologyMailer.php">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -153,12 +169,18 @@
                                                 <input type="text" name="number" id="number">
                                             </div>
                                             <div class="lineDiv"></div>
-                                            <form method="post" id="terminology">
-                                                <div class="term_div">
-                                                    <label class="formLabel">Proporcione una breve descripción de sus necesidades terminológicas:</label>
-                                                    <textarea name="terminology" cols="60" rows="7"></textarea> 
-                                                </div>
-                                            </form>
+                                            <div class="term_div">
+                                                <label class="formLabel">Proporcione una breve descripción de sus necesidades terminológicas:</label>
+                                                <textarea name="terminology" cols="60" rows="7"></textarea> 
+                                            </div>
+                                            <?php 
+                                                if($_GET['tersuccess'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                }
+                                                if($_GET['tersuccess'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                }
+                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="terminologySubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
