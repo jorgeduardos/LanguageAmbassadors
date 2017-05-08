@@ -80,7 +80,7 @@
 
                                             <?php 
                                                 if($_GET['tsuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                    echo "<div class=\"form-messages sucess\">Thank you! Your message has been sent.</div>";  
                                                 }
                                                 if($_GET['tsuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
@@ -144,7 +144,7 @@
                                             </div>
                                             <?php 
                                                 if($_GET['isuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                    echo "<div class=\"form-messages sucess\">Thank you! Your message has been sent.</div>";  
                                                 }
                                                 if($_GET['isuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
@@ -178,7 +178,7 @@
                                             </div>
                                             <?php 
                                                 if($_GET['tersuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                    echo "<div class=\"form-messages sucess\">Thank you! Your message has been sent.</div>";  
                                                 }
                                                 if($_GET['tersuccess'] == -1){
                                                     echo "<div class=\"form-messages error\">Something went wrong.</div> ";
@@ -353,7 +353,7 @@
                                 </div>
                                 <?php 
                                     if($_GET['csuccess'] == 1){
-                                        echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                        echo "<div class=\"form-messages sucess\">Thank you! Your message has been sent.</div>";  
                                     }
                                     if($_GET['csuccess'] == -1){
                                         echo "<div class=\"form-messages error\">Something went wrong.</div> ";
