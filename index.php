@@ -43,7 +43,7 @@
                               <div class="tab-content" id="form">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" action="contact.php" id="translation">
+                                        <form method="post" action="mailer.php" id="translation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -80,10 +80,10 @@
 
                                             <?php 
                                                 if($GET['success'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>"   
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
                                                 }
                                                 if($GET['success'] == -1){
-                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> "
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
                                                 }
                                             ?>
 
