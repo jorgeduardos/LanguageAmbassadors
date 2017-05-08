@@ -326,7 +326,7 @@
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Contáctenos</h3>
                         </div>    
-                        <form method="post" id="contact">
+                       <form method="post" id="contact" action="php/contact.php">
                             <fieldset class="contact_fieldset">
                                 <div class="contact_name_div">
                                     <label for="name">Nombre y Apellido</label>
@@ -344,6 +344,14 @@
                                     <label for="message">Mensaje</label>
                                     <textarea name="message" cols="25" rows="5"></textarea>
                                 </div>
+                                <?php 
+                                    if($_GET['csuccess'] == 1){
+                                        echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                    }
+                                    if($_GET['csuccess'] == -1){
+                                        echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                    }
+                                ?>
                                 <input class="submit_contact" type="submit" name="submit" value="Enviar"> 
                             </fieldset>
                         </form>
