@@ -15,7 +15,7 @@
     $message = trim($_POST["comments"]);
 
     // Check the data.
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: /index.php?success=-1#form");
         exit;
     }

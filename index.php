@@ -158,7 +158,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
                                     <div class="container container-form">
-                                        <form method="post" id="interpretation">
+                                        <form method="post" id="terminology" action="php/terminologyMailer.php">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -172,12 +172,18 @@
                                                 <input type="text" name="number" id="number">
                                             </div>
                                             <div class="lineDiv"></div>
-                                            <form method="post" id="terminology">
-                                                <div class="term_div">
-                                                    <label class="formLabel">Provide a brief description of your terminology needs:</label>
-                                                    <textarea name="terminology" cols="60" rows="7"></textarea> 
-                                                </div>
-                                            </form>
+                                            <div class="term_div">
+                                                <label class="formLabel">Provide a brief description of your terminology needs:</label>
+                                                <textarea name="terminology" cols="60" rows="7"></textarea> 
+                                            </div>
+                                            <?php 
+                                                if($GET['success'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                }
+                                                if($GET['success'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                }
+                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="terminologySubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
                                             </div>
@@ -326,7 +332,7 @@
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Contact Us</h3>
                         </div>    
-                        <form method="post" id="contact">
+                        <form method="post" id="contact" action="php/contact.php">
                             <fieldset class="contact_fieldset">
                                 <div class="contact_name_div">
                                     <label for="name">First &amp; Last Name</label>
@@ -344,6 +350,14 @@
                                     <label for="message">Message</label>
                                     <textarea name="message" cols="25" rows="5"></textarea>
                                 </div>
+                                <?php 
+                                    if($GET['success'] == 1){
+                                        echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                    }
+                                    if($GET['success'] == -1){
+                                        echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                    }
+                                ?>
                                 <input class="submit_contact" type="submit" name="submit" value="Submit"> 
                             </fieldset>
                         </form>
