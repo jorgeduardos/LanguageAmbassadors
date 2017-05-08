@@ -43,7 +43,7 @@
                               <div class="tab-content" id="form">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" action="mailer.php" id="translation">
+                                        <form method="post" action="php/translationMailer.php" id="translation" enctype="multipart/form-data">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">
                                     <div class="container container-form">
-                                        <form method="post" id="interpretation">
+                                        <form method="post" action="php/interpretationMailer.php" id="interpretation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -142,6 +142,14 @@
                                                 <label class="formLabel">Comments</label>
                                                 <textarea name="comments"></textarea> 
                                             </div>
+                                            <?php 
+                                                if($GET['success'] == 1){
+                                                    echo "<div class=\"form-messages sucess\">Thank You your Message has been sent.</div>";  
+                                                }
+                                                if($GET['success'] == -1){
+                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                }
+                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="interpretationSubmitBtn" class="submitQuoteBtn" type="submit" value="Get a Quote">
                                             </div>
@@ -368,7 +376,7 @@
         
         <!--         AIzaSyBOfedoN7izjpStKRlEwnO5UpINSB5uJPw  */ -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://maps.google.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOfedoN7izjpStKRlEwnO5UpINSB5uJPw&callback=initMap"></script>
         <script src="JS/gmaps.js"></script>
         <script src="JS/typed.js"></script>
         <script src="JS/jquery.waypoints.min.js"></script>

@@ -1,9 +1,17 @@
 <?php
 
+
     // Get the form fields, removes html tags and whitespace.
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = trim($_POST["number"]);
+    $sub = trim($_POST["subject"]);
+    $source = trim($_POST["source"]);
+    $target = trim($_POST["target"]);
+
+    
+
     $message = trim($_POST["comments"]);
 
     // Check the data.
@@ -20,8 +28,12 @@
 
     // Build the email content.
     $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$comments\n";
+    $email_content .= "Email: $email\n";
+    $email_content .= "Phone Number: $phone\n";
+    $email_content .= "Subject: $sub\n";
+    $email_content .= "Source Language: $source\n";
+    $email_content .= "Target Language: $target\n\n";
+    $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
     $email_headers = "From: $name <$email>";
