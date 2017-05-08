@@ -41,7 +41,7 @@
         $email_content .= "Subject: $sub\n";
         $email_content .= "Language Pairs: $lan\n";
         $email_content .= "Location: $location\n";
-        $email_content .= "Starting Date: $sDate\n\n";
+        $email_content .= "Starting Date: $sDate\n";
         $email_content .= "Ending Date: $eDate\n\n";
         $email_content .= "Message:\n$message\n";
     }else{
