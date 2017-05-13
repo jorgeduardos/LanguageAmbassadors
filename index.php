@@ -43,7 +43,7 @@
                               <div class="tab-content" id="form">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" action="php/translationMailer.php" id="translation" enctype="multipart/form-data">
+                                        <form method="post" action="php/phpMailerForms/translationMailerV2.php" id="translation" enctype="multipart/form-data">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
