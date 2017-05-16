@@ -20,8 +20,6 @@
 	$mail->isMail();                               
 	$mail->Host = gethostbyname("smtp.gmail.com");
 	$mail->SMTPAuth = false;                               // Enable SMTP authentication
-	$mail->Username = 'rosannandreolis@gmail.com';                 // SMTP username
-	$mail->Password = 'Bb&11073';                           // SMTP password
 	$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 465;                                    // TCP port to connect to
 
@@ -35,7 +33,6 @@
 	    // See http://php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
 	    $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['file']['name']));
 	    $mail->addAttachment($uploadfile, $_FILES['file']['name']);
-	    echo 'file being uploded';
 	}
 
 

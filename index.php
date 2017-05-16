@@ -95,7 +95,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">
                                     <div class="container container-form">
-                                        <form method="post" action="php/interpretationMailer.php" id="interpretation">
+                                        <form method="post" action="php/phpMailerForms/interpretationMailer.php" id="interpretation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -158,7 +158,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
                                     <div class="container container-form">
-                                        <form method="post" id="terminology" action="php/terminologyMailer.php">
+                                        <form method="post" id="terminology" action="php/phpMailerForms/terminologyMailer.php">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">First &amp; Last Name</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
