@@ -27,6 +27,11 @@
 	$mail->addAddress('rosannandreolis@gmail.com', 'Rosanna Andreoli');     // Add a recipient
 
 
+	if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: /index.php?success=-1#translation");
+        exit;
+    }
+
 	if (file_exists($_FILES['file']['tmp_name'])) {
 	    // First handle the upload
 	    // Don't trust provided filename - same goes for MIME types
@@ -49,7 +54,7 @@
 	$mail->Body    = $email_content;
 
 	if(!$mail->send()) {
-		header("Location: /index.php?success=-1#form");
+		header("Location: /index.php?success=-1#translation");
         exit;
 	} else {
 	    header("Location: /index.php?tsuccess=1#translation");

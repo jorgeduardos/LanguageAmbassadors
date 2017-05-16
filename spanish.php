@@ -42,7 +42,7 @@
                               <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <div class="container container-form">
-                                        <form method="post" action="php/translationMailer.php" id="translation" enctype="multipart/form-data">
+                                        <form method="post" action="php/phpMailerForms/translationMailerV2.php" id="translation" enctype="multipart/form-data">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -81,7 +81,7 @@
                                                     echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
                                                 }
                                                 if($_GET['tsuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
                                                 }
                                             ?>
                                             <div class="submitBtnDiv">
@@ -92,7 +92,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">
                                     <div class="container container-form">
-                                        <form method="post" action="php/interpretationMailer.php" id="interpretation">
+                                        <form method="post" action="php/phpMailerForms/interpretationMailer.php" id="interpretation">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -144,7 +144,7 @@
                                                     echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
                                                 }
                                                 if($_GET['isuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
                                                 }
                                             ?>
                                             <div class="submitBtnDiv">
@@ -155,7 +155,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
                                     <div class="container container-form">
-                                        <form method="post" id="terminology" action="php/terminologyMailer.php">
+                                        <form method="post" id="terminology" action="php/phpMailerForms/terminologyMailer.php">
                                             <div class="quote_name_div">
                                                 <label class="formLabel" for="name">Nombre y Apellido</label>
                                                 <input type="text" name="name" id="name" maxlength="40" required>
@@ -178,7 +178,7 @@
                                                     echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
                                                 }
                                                 if($_GET['tersuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
                                                 }
                                             ?>
                                             <div class="submitBtnDiv">
@@ -326,7 +326,7 @@
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Contáctenos</h3>
                         </div>    
-                       <form method="post" id="contact" action="php/contact.php">
+                       <form method="post" id="contact" action="php/phpMailerForms/contactMailer.php">
                             <fieldset class="contact_fieldset">
                                 <div class="contact_name_div">
                                     <label for="name">Nombre y Apellido</label>
@@ -349,7 +349,7 @@
                                         echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
                                     }
                                     if($_GET['csuccess'] == -1){
-                                        echo "<div class=\"form-messages error\">Something went wrong.</div> ";
+                                        echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
                                     }
                                 ?>
                                 <input class="submit_contact" type="submit" name="submit" value="Enviar"> 

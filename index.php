@@ -333,7 +333,7 @@
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Contact Us</h3>
                         </div>    
-                        <form method="post" id="contact" action="php/contact.php">
+                        <form method="post" id="contact" action="php/phpMailerForms/contactMailer.php">
                             <fieldset class="contact_fieldset">
                                 <div class="contact_name_div">
                                     <label for="name">First &amp; Last Name</label>
