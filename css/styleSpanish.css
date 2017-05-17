@@ -623,7 +623,7 @@ fieldset label{
     font-size: 125%;
 }
 
-#translation div, #interpretation div{
+#translation div, #interpretation div, #terminology div{
     margin-bottom: 10px;
 }
 
