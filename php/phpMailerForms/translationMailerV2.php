@@ -24,7 +24,7 @@
 	$mail->Port = 465;                                    // TCP port to connect to
 
 	$mail->setFrom($email, $name);
-	$mail->addAddress('jorgeduardo.1994@gmail.com', 'Rosanna Andreoli');     // Add a recipient
+	$mail->addAddress('rosannandreolis@gmail.com', 'Rosanna Andreoli');     // Add a recipient
 
 
 	if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
