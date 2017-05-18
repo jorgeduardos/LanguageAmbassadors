@@ -27,7 +27,12 @@ $(document).ready(function() {
 			typeSpeed: 10,
             backSpeed: 0
 		});
-	});
+	 });
+
+
+    $(".close").on("click", function(){
+      $(".generalSuccess").toggleClass("js--quote-container");
+    });
 
     
     /* NAV BAR ANIMATIONS */

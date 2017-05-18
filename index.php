@@ -25,6 +25,25 @@
         <title>Language Ambassadors</title>
     </head>
     <body>
+        <?php
+
+        if($_GET['tsuccess'] == 1){
+            echo " <div class=\"opacityOuter\">
+                <div class=\"generalSuccess alert alert-success alert-dismissable\">
+                  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                  <strong>Success! Your message has been sent.</strong>
+                </div>
+            </div>";  
+        }
+        if($_GET['tsuccess'] == -1){
+            echo " <div class=\"opacityOuter\">
+                <div class=\"generalSuccess alert alert-danger alert-dismissable\">
+                  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                  <strong>Oops! Your message hasn't been sent.</strong>
+                </div>
+            </div>"; ;
+        }
+        ?>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <div class="sidebar-nav">
