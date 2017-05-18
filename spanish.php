@@ -24,7 +24,27 @@
         <title>Language Ambassadors</title>
     </head>
     <body>
-<div id="wrapper">
+        <div id="non-dynamic">
+            <?php
+            if($_GET['tsuccess'] == 1 || $_GET['isuccess'] == 1 || $_GET['tersuccess'] == 1){
+                echo " <div class=\"opacityOuter\">
+                    <div class=\"generalSuccess alert alert-success alert-dismissable\">
+                      <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                      <strong>Su mensaje ha sido enviado!</strong>
+                    </div>
+                </div>";  
+            }
+            if($_GET['tsuccess'] == -1 || $_GET['isuccess'] == -1 || $_GET['tersuccess'] == -1){
+                echo " <div class=\"opacityOuter\">
+                    <div class=\"generalSuccess alert alert-danger alert-dismissable\">
+                      <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                      <strong>Su mensaje no ha podido ser enviado!</strong>
+                    </div>
+                </div>";
+            }
+            ?>
+        </div>
+       <div id="wrapper">
             <div id="sidebar-wrapper">
                 <div class="sidebar-nav">
                     <a class="js--close_general"><i class="ion-close-round close_quote"></i></a>
@@ -76,14 +96,6 @@
                                                 <label class="formLabel">Comentarios</label>
                                                 <textarea name="comments"></textarea> 
                                             </div>
-                                            <?php 
-                                                if($_GET['tsuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
-                                                }
-                                                if($_GET['tsuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
-                                                }
-                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="translationSubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
@@ -139,14 +151,6 @@
                                                 <label class="formLabel">Comentarios</label>
                                                 <textarea name="comments"></textarea> 
                                             </div>
-                                            <?php 
-                                                if($_GET['isuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
-                                                }
-                                                if($_GET['isuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
-                                                }
-                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="interpretationSubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
@@ -173,14 +177,6 @@
                                                 <label class="formLabel">Proporcione una breve descripción de sus necesidades terminológicas:</label>
                                                 <textarea name="terminology" cols="60" rows="7"></textarea> 
                                             </div>
-                                            <?php 
-                                                if($_GET['tersuccess'] == 1){
-                                                    echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
-                                                }
-                                                if($_GET['tersuccess'] == -1){
-                                                    echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
-                                                }
-                                            ?>
                                             <div class="submitBtnDiv">
                                                 <input id="terminologySubmitBtn" class="submitQuoteBtn" type="submit" value="Enviar">
                                             </div>
@@ -344,12 +340,18 @@
                                     <label for="message">Mensaje</label>
                                     <textarea name="message" cols="25" rows="5"></textarea>
                                 </div>
-                                <?php 
+                                <?php
                                     if($_GET['csuccess'] == 1){
-                                        echo "<div class=\"form-messages sucess\">Gracias, su mensaje ha sido enviado.</div>";  
+                                        echo "<div class=\"alert alert-success alert-dismissable\">
+                                              <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                                              <strong>Su mensaje ha sido enviado!</strong>
+                                            </div>";  
                                     }
                                     if($_GET['csuccess'] == -1){
-                                        echo "<div class=\"form-messages error\">Su mensaje no ha sido enviado!</div> ";
+                                        echo "<div class=\"alert alert-danger alert-dismissable\">
+                                              <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
+                                              <strong>Su mensaje no ha podido ser enviado!</strong>
+                                            </div>";
                                     }
                                 ?>
                                 <input class="submit_contact" type="submit" name="submit" value="Enviar"> 

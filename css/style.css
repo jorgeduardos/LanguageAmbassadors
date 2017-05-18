@@ -346,7 +346,7 @@ header{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0px 25px 20px 25px;    
 }
 
@@ -384,7 +384,7 @@ header{
 }
 
 .management{
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .management_container{
@@ -485,7 +485,7 @@ div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front{
     width: 95%;
     height: 450px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
     color: #000;
 }
 

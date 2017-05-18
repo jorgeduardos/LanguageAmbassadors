@@ -16,6 +16,26 @@ body{
     
 }
 
+.generalSuccess{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+  /*width: 50%;*/
+    font-size: 120%;
+}
+
+.opacityOuter{
+    position: fixed;
+    z-index: 500;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/************************************************************************/
+
 header{
     background-image: url(images/newBackground1583new.png);
     background-size:cover;
@@ -287,7 +307,7 @@ header{
 }
 
 .translation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/bigimg.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bigimg.jpg); 
     background-attachment: fixed;
     background-position: center;
     color: #d8d8d8;
@@ -315,11 +335,11 @@ header{
 .interpretation{
     text-align: center;
     color: #d0cece;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/interpretation-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/interpretation-1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0px 25px 20px 50px;    
 }
 
@@ -349,7 +369,7 @@ header{
 }
 
 .management{
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .management_container{
@@ -450,7 +470,7 @@ div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front{
     width: 95%;
     height: 450px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
     color: #000;
 }
 

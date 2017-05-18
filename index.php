@@ -41,7 +41,7 @@
                       <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
                       <strong>Oops! Your message hasn't been sent.</strong>
                     </div>
-                </div>"; ;
+                </div>";
             }
             ?>
         </div>
@@ -356,7 +356,7 @@
                                         echo "<div class=\"alert alert-danger alert-dismissable\">
                                               <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
                                               <strong>Oops! Your message hasn't been sent.</strong>
-                                            </div>"; ;
+                                            </div>";
                                     }
                                     ?>
                                 <input class="submit_contact" type="submit" name="submit" value="Submit"> 
