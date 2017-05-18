@@ -2,8 +2,8 @@ $(document).ready(function() {
     
  //---------- function to check if a particular class exist in the DOM (returns boolean)   
     $.fn.exists = function () {
-    return this.length !== 0;
-}
+      return this.length !== 0;
+    }
     
         var map = new GMaps({
           div: '.map',
@@ -30,8 +30,8 @@ $(document).ready(function() {
 	 });
 
 
-    $(".close").on("click", function(){
-      $(".generalSuccess").toggleClass("js--quote-container");
+    $("#non-dynamic").on("click", ".close", function(){
+      $(".opacityOuter").remove();
     });
 
     

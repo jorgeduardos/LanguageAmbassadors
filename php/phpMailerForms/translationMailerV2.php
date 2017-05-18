@@ -24,7 +24,7 @@
 	$mail->Port = 465;                                    // TCP port to connect to
 
 	$mail->setFrom($email, $name);
-	$mail->addAddress('rosannandreolis@gmail.com', 'Rosanna Andreoli');     // Add a recipient
+	$mail->addAddress('jorgeduardo.1994@gmail.com', 'Rosanna Andreoli');     // Add a recipient
 
 
 	if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -54,7 +54,7 @@
 	$mail->Body    = $email_content;
 
 	if(!$mail->send()) {
-		header("Location: /index.php?success=-1#translation");
+		header("Location: /index.php?tsuccess=-1#translation");
         exit;
 	} else {
 	    header("Location: /index.php?tsuccess=1#translation");
